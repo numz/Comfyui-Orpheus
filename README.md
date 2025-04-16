@@ -105,7 +105,7 @@ use python_embeded :
 python_embeded\python.exe -m pip install -r ComfyUI-Orpheus/requirements.txt
 ```
 
-3. Download the required [GGUF model](https://huggingface.co/freddyaboulton) from [FreddyAboulton](https://huggingface.co/freddyaboulton) huggingface page, and place it in your ComfyUI models directory under `models/unet/`. (Sorry I don't know where to find Italian one)
+3. Download the required [GGUF model](https://huggingface.co/freddyaboulton) from [FreddyAboulton](https://huggingface.co/freddyaboulton) huggingface page, and place it in your ComfyUI models directory under `models/unet/`.
 
    <img src="doc/models.png" width="100%">
 
