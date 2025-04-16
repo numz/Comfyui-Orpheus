@@ -8,7 +8,12 @@ import queue
 
 model = SNAC.from_pretrained("hubertsiuzdak/snac_24khz").eval()
 
-snac_device = "cuda"
+snac_device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+# for mps
+if torch.backends.mps.is_available():
+    snac_device = torch.device("cpu")
+
+
 model = model.to(snac_device)
 
 
