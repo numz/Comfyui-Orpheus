@@ -99,7 +99,7 @@ load venv and :
 pip install -r ComfyUI-Orpheus/requirements.txt
 ```
 
-use python_embeded :
+Or use python_embeded :
 
 ```bash
 python_embeded\python.exe -m pip install -r ComfyUI-Orpheus/requirements.txt
@@ -111,16 +111,15 @@ python_embeded\python.exe -m pip install -r ComfyUI-Orpheus/requirements.txt
 
 4. **GPU Support**
 
-On windows, default installation of llama-cpp-python doesn't take GPU support. If you want GPU Support you need
-to locate `nvcc.exe` folder and:
+On windows, default installation of llama-cpp-python doesn't take NVIDIA GPU support. If you want NVIDIA GPU Support you need to locate `nvcc.exe` folder and:
 
 ```bash
 set CMAKE_ARGS="-DGGML_CUDA=on"
-set CUDA_CXX="YOUR_CUDA_DIR\v12.6.3\bin\nvcc.exe"
+set CUDA_CXX="YOUR_CUDA_DIR\v12.x.x\bin\nvcc.exe"
 python_embeded\python.exe -m pip install llama-cpp-python[server] --upgrade --force-reinstall --no-cache-dir
 ```
 
-Be patient, it takes time...
+Be patient, can takes time...
 
 ## Usage
 
