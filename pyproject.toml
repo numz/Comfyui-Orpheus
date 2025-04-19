@@ -1,0 +1,15 @@
+[project]
+name = "orpheus"
+description = "TTS with emotional speech capabilities in 8 Languages 24 speakers."
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["sounddevice", "snac"]
+
+[project.urls]
+Repository = "https://github.com/numz/Comfyui-Orpheus"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "Comfyui-Orpheus"
+Icon = ""
